@@ -91,6 +91,7 @@ const FP_MODULUS_LE: &'static str =
 const FQ_MODULUS_LE: &'static str =
     "1000000012be64c8dd8a4990cf89642200000000000000000000000000000004";
 
+#[derive(Copy, Clone)]
 struct AccessibleFp(pub [u64; 4]);
 
 impl From<AccessibleFp> for Fp {
